@@ -1,6 +1,7 @@
 /* spi.h
  *	This file simply provides macros for the SPI hardware layout
- * on the ATmega1284P and similar AVR MCUs and a generic SPI master
+ * on the ATmega1284P and similar AVR MCUs (deliberately excluded
+ * from config.h as permanent details) and a generic SPI master
  * initialization function.
  */
 #ifndef _SPI_H

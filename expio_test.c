@@ -12,8 +12,9 @@
 
 #include <avr/io.h>
 
-#include "spi.h"
+#include "config.h"
 #include "expio.h"
+#include "spi.h"
 
 int main()
 {

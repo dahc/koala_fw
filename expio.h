@@ -8,14 +8,6 @@
 #ifndef _EXPIO_H
 #define _EXPIO_H
 
-#include <avr/io.h>
-
-/* Chip select pin configuration */
-#define EXPIO_PORT	PORTB
-#define EXPIO_DDR	DDRB
-#define EXPIO_DATA	PB1
-#define EXPIO_LADDR	PB2
-
 /* MCP23S17 register addresses */
 #define EXPIO_IOCON	0x0A
 #define EXPIO_IODIRA	0x00

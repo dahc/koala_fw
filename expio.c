@@ -1,5 +1,6 @@
 #include <avr/io.h>
 
+#include "config.h"
 #include "expio.h"
 
 /* Fixed, hidden MCP23S17 details */
