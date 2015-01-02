@@ -1,4 +1,7 @@
 /* lcd.h
+ *	This file provides an interface to HD44780 character LCD
+ * connected in 8-bit mode according to the pin configuration
+ * specified in config.h.
  */
 
 #ifndef _LCD_H
