@@ -3,7 +3,6 @@
  * LCD connected as defined in config.h by simply writing "Hello,
  * World!" to the display.
  */
-#include "config.h"
 #include "lcd.h"
 
 int main()
