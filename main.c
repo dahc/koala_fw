@@ -2,21 +2,14 @@
 
 #include "config.h"
 #include "expio.h"
+#include "lcd.h"
 #include "spi.h"
 
 int main()
 {
-	unsigned int a;
+	lcd_init();
 
-	spi_init();
-	expio_init(EXPIO_DATA);
-	expio_init(EXPIO_LADDR);
-	expio_widewrite(EXPIO_LADDR, EXPIO_IODIRA, 0x0000);
-
-	for (;;) {
-		a = expio_wideread(EXPIO_DATA, EXPIO_GPIOA);
-		expio_widewrite(EXPIO_LADDR, EXPIO_GPIOA, a);
-	}
+	lcd_print("A");
 
 	return 0;
 }

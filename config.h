@@ -13,7 +13,7 @@
 #include <avr/io.h>
 
 /* Clock frequency to be assumed by delay code */
-#define F_CPU 8e6
+#define F_CPU 1e6
 #include <util/delay.h>
 
 /* I/O expansion chip-select configuration */
@@ -21,14 +21,13 @@
 #define EXPIO_DDR	DDRB
 #define EXPIO_DATA	PB1
 #define EXPIO_LADDR	PB2
-#define EXPIO_LCD	PB3
 
-/* LCD pin assignments on GPIOB of EXPIO_LCD */
-#define LCD_EN	0
-#define LCD_RW	1
-#define LCD_RS	2
-
-/* Delay in milliseconds after clearing LCD */
-#define LCD_CLRWAIT	5
+/* LCD pin assignments */
+#define LCD_DATA_DDR	DDRA
+#define LCD_DATA_PORT	PORTA
+#define LCD_CTRL_DDR	DDRC
+#define LCD_CTRL_PORT	PORTC
+#define LCD_ENABLE	PC7
+#define LCD_REGSEL	PC6
 
 #endif /* _CONFIG_H */
