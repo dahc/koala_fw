@@ -49,7 +49,7 @@ void lcd_clear()
 
 void lcd_cmd(unsigned char rs, unsigned char data)
 {
-	_delay_us(20);
+	_delay_us(25);
 	if (rs)
 		LCD_CTRL_PORT |= 1 << LCD_REGSEL;
 	else
